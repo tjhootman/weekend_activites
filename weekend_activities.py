@@ -5,3 +5,8 @@ activity_time = {'Sleeping': 9, 'Homework': 2, 'Playing Games': 3, 'Reading': 1,
 
 activities = activity_time.keys()
 time_spent = activity_time.values()
+
+plt.figure()
+plt.pie(time_spent, labels=activities, autopct='%1.1f%%',startangle=90)
+
+plt.show()
